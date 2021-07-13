@@ -65,7 +65,7 @@ time.sleep(1)
 WebDriverWait(browser,60).until(lambda driver: driver.execute_script('return document.readyState') == 'complete')
 if 'https://uis.fudan.edu.cn/authserver/login' in browser.current_url:
     WebDriverWait(browser,60).until(lambda driver: driver.execute_script('return document.readyState') == 'complete')
-    login(browser,sys.argv[1],sys,argv[2])
+    login(browser,sys.argv[1],sys.argv[2])
     
 if 'https://zlapp.fudan.edu.cn/site/ncov/TfudanDaily' in browser.current_url:
     report(browser)
